@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand"routerLink="/"  href="#"><img src="https://img.icons8.com/clouds/100/000000/chat.png" width="30" height="30" class="d-inline-block align-top" alt="">3813ICT Assignment</a>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/login" href="#">Login</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/" href="#">Groups</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/user" href="#">Users</a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Profile
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" routerLink="/profile" href="#">My Account</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" (click)="onClickLogout()" routerLink="/login" href="#">Log Out</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>
